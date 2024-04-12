@@ -12,9 +12,10 @@ public class Tests {
     assertEquals("3,4",testCoords.toString());
     }
 
+
     @Test
-    public void testHavePiece(){
+    public void testSquareisEmpty(){
         Board testPieceSquare = new Board();
-        assertEquals(false, testPieceSquare.havePiece("a2"));
+        assertEquals(false, testPieceSquare.havePiece("d4"));
     }
 }

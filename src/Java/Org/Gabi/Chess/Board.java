@@ -3,14 +3,12 @@ public class Board {
 
     public boolean havePiece(String coords){
         Coordinates c = new Coordinates(coords);
-        System.out.println(c.getHorizontal());
-        System.out.println(c.getVertical());
-//        if (square[c.getHorizontal()][c.getVertical()].isEmpty()){
-//            return false;
-//        }else {
-//            return true;
-//        }
-        return true;
+        if (square[c.getHorizontal()][c.getVertical()] != null){
+            return false;
+        }else {
+            return true;
+        }
+
     }
 
 
